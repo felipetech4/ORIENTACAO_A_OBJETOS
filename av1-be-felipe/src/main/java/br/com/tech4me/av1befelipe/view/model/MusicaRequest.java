@@ -18,18 +18,18 @@ public class MusicaRequest
     private String artista;
     @NotBlank(message = "O álbum deve possuir caracteres(não brancos)")
     @NotEmpty(message = "O álbum deve ser preenchido")
-    @Pattern(regexp = "^[A-Z]+(.)*", message = "O álbum deve comecar com letra MAIÚSCULA")
+    @Pattern(regexp = "^[A-Z]+(.)*", message = "O álbum deve começar com letra MAIÚSCULA")
     private String album;
-    @NotBlank(message = "O gênero deve possuir caracteres(nao brancos)")
+    @NotBlank(message = "O gênero deve possuir caracteres(não brancos)")
     @NotEmpty(message = "O gênero deve ser preenchido")
-    @Pattern(regexp = "^[A-Z]+(.)*", message = "O gênero deve comecar com letra MAIÚSCULA")
+    @Pattern(regexp = "^[A-Z]+(.)*", message = "O gênero deve começar com letra MAIÚSCULA")
     private String genero;
     @Min(value = 1702, message = "O ano de lançamento deve ser superior a 1701")
     @Max(value = 2022, message = "O ano de lançamento deve ser inferior a 2023")
     private int anoLancamento;
     @NotBlank(message = "O compositor deve possuir caracteres(não brancos)")
     @NotEmpty(message = "O compositor deve ser preenchido")
-    @Pattern(regexp = "^[A-Z]+(.)*", message = "O compositor deve comecar com letra MAIÚSCULA")
+    @Pattern(regexp = "^[A-Z]+(.)*", message = "O compositor deve começar com letra MAIÚSCULA")
     private String compositor;
 
     public String getTitulo() 
